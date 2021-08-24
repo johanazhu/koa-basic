@@ -23,18 +23,18 @@
 ├── config                          运行配置
 │   ├── index.js
 ├── controller                      控制器，控制数据库
-│   ├── home.js      				主/根
-│   ├── user.js						用户
-├── db  							连接数据库
+│   ├── home.js                     主/根
+│   ├── user.js                     用户
+├── db                              连接数据库
 │   ├── index.js
 ├── models                          模型(数据库)
-│   ├── User.js						用户模型
+│   ├── User.js                     用户模型
 ├── public                          静态资源目录
 ├── routes                          路由配置
-│   ├── home.js						主/根
-│   ├── index.js                  	路由配置主文件
-│   ├── user.js						用户
-├── .editorconfig 					统一编码配置文件
+│   ├── home.js                     主/根
+│   ├── index.js                    路由配置主文件
+│   ├── user.js                     用户
+├── .editorconfig                   统一编码配置文件
 ├── .gitignore
 ├── index.js                        入口文件
 ├── package.json
