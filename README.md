@@ -4,7 +4,7 @@
 
 ## 前言
 
-详细搭建过程可以看这一篇：[Koa2 从零到脚手架](https://fe.azhubaby.com/Koa2/)
+详细搭建过程可以看这一篇：[Koa2 从零到脚手架](https://blog.azhubaby.com/2021/08/24/2021-08-24-Koa2%E4%BB%8E%E9%9B%B6%E5%88%B0%E8%84%9A%E6%89%8B%E6%9E%B6/)
 
 ## 使用的中间件
 
