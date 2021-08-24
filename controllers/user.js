@@ -2,7 +2,7 @@ const assert = require('http-assert')
 const User = require('../models/User')
 
 class UserController {
-  static async createUser(ctx) {
+  static async create(ctx) {
     ctx.verifyParams({
       username: { type: 'string', required: true },
       password: { type: 'string', required: true },
@@ -12,7 +12,7 @@ class UserController {
     ctx.status = 200
     ctx.body = model
   }
-  static async listUsers(ctx) {
+  static async find(ctx) {
     //   插入数据
     // User.insertMany([
     //   {
@@ -28,12 +28,12 @@ class UserController {
     ctx.status = 200
     ctx.body = model
   }
-  static async showUserDetail(ctx) {
+  static async findById(ctx) {
     const model = await User.findById(ctx.params.id)
     ctx.status = 200
     ctx.body = model
   }
-  static async updateUser(ctx) {
+  static async update(ctx) {
     const userId = ctx.params.id
 
     assert(userId === ctx.state.user.id, 403, '无权进行此操作')
@@ -41,7 +41,7 @@ class UserController {
     ctx.status = 200
     ctx.body = model
   }
-  static async deleteUser(ctx) {
+  static async delete(ctx) {
     const userId = ctx.params.id
 
     assert(userId === ctx.state.user.id, 403, '无权进行此操作')

@@ -4,16 +4,15 @@ const User = require('../models/User')
 
 const { JWT_SECRET } = require('../config/')
 
-class AuthController {
+class HomeController {
+  static home(ctx) {
+    ctx.body = 'hello world'
+  }
   static async login(ctx) {
     const { username, password } = ctx.request.body
 
     // 1.根据用户名找用户
     const user = await User.findOne({ username }).select('+password')
-    // if (!user) {
-    //   ctx.status = 401
-    //   ctx.body = { message: '用户名不存在' }
-    // }
     assert(user, 422, '用户不存在')
     // 2.校验密码
     const isValid = require('bcrypt').compareSync(password, user.password)
@@ -26,4 +25,4 @@ class AuthController {
   }
 }
 
-module.exports = AuthController
+module.exports = HomeController
