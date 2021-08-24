@@ -23,7 +23,7 @@
 ├── config                          运行配置
 │   ├── index.js
 ├── controller                      控制器，控制数据库
-│   ├── home.js						主/根 控制器
+│   ├── home.js      	主/根 控制器
 │   ├── user.js
 ├── db  							连接数据库
 │   ├── index.js
