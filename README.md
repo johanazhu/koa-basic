@@ -8,13 +8,13 @@
 
 ## 使用的中间件
 
-- koa-router——路由解决方案
-- koa-bodyparser——请求体解析
-- koa-static—— 提供静态资源服务
-- @koa/cors——跨域
-- koa-json-error——处理错误
-- koa-parameter —— 参数校验
-- http-assert—— 断言
+-   koa-router——路由解决方案
+-   koa-bodyparser——请求体解析
+-   koa-static—— 提供静态资源服务
+-   @koa/cors——跨域
+-   koa-json-error——处理错误
+-   koa-parameter —— 参数校验
+-   http-assert—— 断言
 
 ## 项目目录
 
@@ -41,3 +41,9 @@
 ├── README.md
 ```
 ````
+
+## 项目启动
+
+```
+npm run serve
+```
